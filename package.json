@@ -1,35 +1,19 @@
 {
-  "private": true,
-  "version": "3.0.0",
   "name": "gatsby-source-printful",
-  "workspaces": [
-    "gatsby-source-printful"
+  "version": "1.0.0",
+  "description": "Printful store data for your Gatsby projects",
+  "author": "Taimoor Khan <taimoor.m.k@gmail.com>",
+  "repository": "https://github.com/app-corp/gatsby-source-printful",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-source-plugin",
+    "printful"
   ],
-  "scripts": {
-    "build": "yarn workspace demo build",
-    "clean": "yarn workspace demo clean",
-    "dev": "yarn workspace demo dev"
-  },
-  "release": {
-    "branches": [
-      {
-        "name": "master"
-      },
-      {
-        "name": "beta",
-        "prerelease": true
-      }
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/npm",
-        {
-          "pkgRoot": "gatsby-source-printful"
-        }
-      ],
-      "@semantic-release/github"
-    ]
+  "dependencies": {
+    "gatsby-source-filesystem": "4.14.0",
+    "isomorphic-unfetch": "3.1.0"
   }
 }
