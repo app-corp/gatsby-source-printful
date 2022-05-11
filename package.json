@@ -1,7 +1,6 @@
 {
   "private": true,
   "workspaces": [
-    "demo",
     "gatsby-source-printful"
   ],
   "scripts": {
