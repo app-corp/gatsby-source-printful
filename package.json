@@ -1,6 +1,7 @@
 {
   "private": true,
   "version": "3.0.0",
+  "name": "gatsby-source-printful",
   "workspaces": [
     "gatsby-source-printful"
   ],
