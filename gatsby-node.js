@@ -74,7 +74,7 @@ exports.sourceNodes = async (
   )
 
   const { result: countries } = await printful.get(`countries`)
-  const { result: storeInformation } = await printful.get(`store`)
+  // const { result: storeInformation } = await printful.get(`store`)
 
   const processCountry = async (country) => {
     const nodeData = {
@@ -277,5 +277,5 @@ exports.sourceNodes = async (
     countries.map(async (country) => createNode(await processCountry(country)))
   )
 
-  await createNode(await processStoreInformation(storeInformation))
+  // await createNode(await processStoreInformation(storeInformation))
 }
